@@ -4,7 +4,7 @@ import styles from './home.module.scss';
 export const Home = () => {
   return (
     <section className={styles.wrapper} id='Home'>
-      <div>
+      <div className={styles.container}>
         <div className={styles.hero}>
           <div className={styles.text}>
             <h1 className={styles.title}>Front-End React Developer</h1>

@@ -1,96 +1,95 @@
 .wrapper {
   height: 100vh;
-
   padding-top: 80px;
-
   background-color: var(--gray);
 
-  .skills {
-    gap: 30px;
-    display: flex;
-    align-items: center;
+  .container {
+    @include container;
 
-    padding-top: 40px;
+    .hero {
+      display: flex;
+      justify-content: space-between;
 
-    span {
-      @include body-l-bold(var(--mulish-font));
-      padding-right: 30px;
-      border-right: 2px solid rgba(45, 46, 50, 0.5);
+      .text {
+        max-width: 460px;
+
+        .title {
+          @include body-xxl-bold;
+        }
+
+        .description {
+          @include body-l(var(--mulish-font));
+
+          line-height: 28px;
+          color: var(--text-secondary);
+          padding-top: 20px;
+        }
+
+        .links {
+          gap: 10px;
+          display: flex;
+          padding-top: 20px;
+
+          a {
+            svg {
+              width: 32px;
+              height: 32px;
+              color: var(--black);
+              transition: color 0.25s;
+            }
+
+            :hover {
+              color: var(--blue);
+            }
+          }
+        }
+      }
+
+      .img {
+        width: 350px;
+        height: 350px;
+        background-size: 120%;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-image: url('/src/assets/img/hero-img.jpg');
+        border: 3px solid #2d2e32;
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+        transition: all 1s ease-in-out;
+        animation: morph 8s ease-in-out infinite;
+      }
     }
 
-    ul {
+    .skills {
       gap: 30px;
       display: flex;
+      align-items: center;
+      padding-top: 40px;
 
-      li {
-        cursor: pointer;
-
-        :hover {
-          transform: translateY(-1rem);
-        }
-
-        img {
-          transition: all 0.25s ease-in-out;
-        }
-      }
-    }
-  }
-
-  .hero {
-    display: flex;
-    justify-content: space-between;
-
-    .text {
-      max-width: 460px;
-
-      .title {
-        @include body-xxl-bold;
+      span {
+        @include body-l-bold(var(--mulish-font));
+        padding-right: 30px;
+        border-right: 2px solid rgba(45, 46, 50, 0.5);
       }
 
-      .description {
-        @include body-l(var(--mulish-font));
-
-        line-height: 28px;
-        color: var(--text-secondary);
-
-        padding-top: 20px;
-      }
-
-      .links {
-        gap: 10px;
+      ul {
+        gap: 30px;
         display: flex;
 
-        padding-top: 20px;
-
-        a {
-          svg {
-            width: 32px;
-            height: 32px;
-            color: var(--black);
-            transition: color 0.25s;
-          }
+        li {
+          cursor: pointer;
 
           :hover {
-            color: var(--blue);
+            transform: translateY(-1rem);
+          }
+
+          img {
+            width: 105px;
+            height: 50px;
+            display: flex;
+            transition: all 0.25s ease-in-out;
           }
         }
       }
-    }
-
-    .img {
-      width: 350px;
-      height: 350px;
-
-      background-size: 120%;
-      background-position: 50%;
-      background-repeat: no-repeat;
-      background-image: url('/src/assets/img/hero-img.jpg');
-
-      border: 3px solid #2d2e32;
-      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-
-      transition: all 1s ease-in-out;
-      animation: morph 8s ease-in-out infinite;
     }
   }
 }

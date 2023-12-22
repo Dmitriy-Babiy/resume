@@ -12,6 +12,7 @@ export default defineConfig({
           @import 'src/assets/styles/_colors.scss';
           @import 'src/assets/styles/_typography.scss';
           @import 'src/assets/styles/_animations.scss';
+          @import 'src/assets/styles/_global.scss';
         `,
       },
     },

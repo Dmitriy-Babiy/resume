@@ -4,3 +4,8 @@ html {
   font-family: var(--poppins-font), sans-serif;
   color: var(--text-color);
 }
+
+@mixin container {
+  max-width: 950px;
+  margin: 0 auto;
+}
