@@ -3,7 +3,7 @@ import { Home } from './sections';
 
 import styles from './app.module.scss';
 
-function App() {
+export const App = () => {
   return (
     <>
       <Header />
@@ -25,6 +25,4 @@ function App() {
       </div>
     </>
   );
-}
-
-export default App;
+};
