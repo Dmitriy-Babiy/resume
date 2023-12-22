@@ -1,3 +1,4 @@
-import Logo from './assets/react.svg?react';
+import TelegramIcon from './telegram.svg?react';
+import GithubIcon from './github.svg?react';
 
-export { Logo };
+export { TelegramIcon, GithubIcon };

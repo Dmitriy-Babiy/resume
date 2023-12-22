@@ -1,0 +1,40 @@
+.header {
+  @include body-m-medium;
+
+  height: 80px;
+  width: 100%;
+
+  top: 0;
+  position: sticky;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 25px 40px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 9%);
+  background-color: var(--white);
+
+  color: var(--text-color);
+
+  user-select: none;
+
+  .logo {
+    @include body-xl-bold;
+    cursor: pointer;
+  }
+
+  .navigation {
+    display: flex;
+    gap: 20px;
+
+    li {
+      cursor: pointer;
+
+      :hover {
+        color: var(--blue);
+        transition: all 0.25s;
+      }
+    }
+  }
+}
