@@ -1,0 +1,64 @@
+.wrapper {
+  padding-block: 150px;
+
+  .container {
+    @include container;
+
+    .content {
+      display: flex;
+      gap: 80px;
+
+      .left {
+        position: relative;
+
+        .mainImg {
+          display: flex;
+          border-radius: 20px;
+          height: 342px;
+          width: 410px;
+        }
+
+        .secondaryImg {
+          z-index: 10;
+          position: absolute;
+          left: 345px;
+          bottom: 35px;
+          height: 60px;
+          width: 60px;
+        }
+
+        span {
+          position: absolute;
+          bottom: -40px;
+          left: 280px;
+          border-radius: 100%;
+          background-color: var(--white);
+
+          svg {
+            height: 190px;
+            width: 190px;
+            animation: rotate 9s linear infinite;
+          }
+        }
+      }
+
+      .right {
+        h3 {
+          @include body-m-medium;
+          color: var(--blue);
+          margin-bottom: 10px;
+        }
+
+        h4 {
+          @include body-xl-medium;
+          margin-bottom: 20px;
+        }
+
+        p {
+          @include body-l(var(--mulish-font));
+          color: var(--text-secondary);
+        }
+      }
+    }
+  }
+}
