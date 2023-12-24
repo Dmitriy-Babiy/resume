@@ -9,12 +9,12 @@ export const About = () => {
           <div className={styles.left}>
             <img
               className={styles.mainImg}
-              src='/src/assets/img/laptop.png'
+              src='./src/assets/img/laptop.png'
               alt='laptop-img'
             />
             <img
               className={styles.secondaryImg}
-              src='/src/assets/img/working-emoji.png'
+              src='./src/assets/img/working-emoji.png'
               alt='working-emoji-img'
             />
             <span>
