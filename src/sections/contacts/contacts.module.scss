@@ -1,0 +1,64 @@
+.wrapper {
+  padding-block: 100px;
+
+  .container {
+    @include container;
+
+    .content {
+      > h3 {
+        @include body-m-medium;
+        color: var(--blue);
+        margin-bottom: 10px;
+      }
+
+      > h4 {
+        @include body-xl-medium;
+        margin-bottom: 60px;
+      }
+
+      .contacts {
+        display: flex;
+        gap: 80px;
+
+        .contact {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+
+          .icon {
+            display: flex;
+            padding: 10px;
+            color: var(--blue);
+            border-radius: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            svg {
+              height: 32px;
+              width: 32px;
+            }
+          }
+
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h3 {
+              @include body-l-medium;
+            }
+
+            a {
+              @include body-m;
+              cursor: pointer;
+              color: var(--text-secondary);
+
+              &:hover {
+                color: var(--blue);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { Footer, Header } from './components';
-import { About, Home } from './sections';
+import { About, Contacts, Home } from './sections';
 
 function App() {
   return (
@@ -8,14 +8,14 @@ function App() {
       <Home />
       <About />
 
-      <section style={{ height: 1000, backgroundColor: '#f9f9f9' }} id='Projects'>
+      <section
+        style={{ height: 1000, backgroundColor: '#f9f9f9' }}
+        id='Projects'
+      >
         Projects
       </section>
 
-      <section style={{ height: 1000 }} id='Contacts'>
-        Contacts
-      </section>
-
+      <Contacts />
       <Footer />
     </>
   );

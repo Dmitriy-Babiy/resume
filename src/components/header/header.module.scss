@@ -33,7 +33,7 @@
     li {
       cursor: pointer;
 
-      :hover {
+      &:hover {
         color: var(--blue);
         transition: all 0.25s;
       }

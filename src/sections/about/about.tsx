@@ -3,7 +3,7 @@ import styles from './about.module.scss';
 
 export const About = () => {
   return (
-    <section id='About' className={styles.wrapper}>
+    <section className={styles.wrapper} id='About'>
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.left}>
@@ -25,7 +25,7 @@ export const About = () => {
           <div className={styles.right}>
             <h3>ABOUT ME</h3>
             <h4>
-              A dedicated Front-end Developer based in Krasnoyarsk, Russian 📍
+              A dedicated Front-end Developer based in Krasnoyarsk, Russia 📍
             </h4>
             <p>
               As a Junior Front-End Developer, I possess an impressive arsenal

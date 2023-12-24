@@ -2,7 +2,7 @@ import { Link, animateScroll } from 'react-scroll';
 
 import styles from './header.module.scss';
 
-const navigation = ['Home', 'About', 'Projects', 'Contacts'];
+const NAVIGATION = ['Home', 'About', 'Projects', 'Contacts'];
 
 export const Header = () => {
   return (
@@ -14,7 +14,7 @@ export const Header = () => {
         Dmitriy.Dev
       </h3>
       <ul className={styles.navigation}>
-        {navigation.map((route) => (
+        {NAVIGATION.map((route) => (
           <li key={route}>
             <Link smooth to={route} offset={-80} duration={500}>
               {route}

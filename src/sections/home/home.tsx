@@ -11,7 +11,7 @@ export const Home = () => {
               <h1 className={styles.title}>Front-End React Developer</h1>
               <p className={styles.description}>
                 Hi, I'm Dmitriy Babiy. A passionate Front-end React Developer
-                based in Krasnoyarsk, Russian. 📍
+                based in Krasnoyarsk, Russia. 📍
               </p>
               <span className={styles.links}>
                 <a href='https://t.me/Fosgensil' target='_blank'>
