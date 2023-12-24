@@ -1,0 +1,37 @@
+.footer {
+  padding-block: 60px;
+  color: var(--white);
+  background-color: var(--black);
+
+  .container {
+    @include container;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .rights {
+      @include body-m-bold;
+    }
+
+    .links {
+      gap: 20px;
+      display: flex;
+
+      a {
+        display: flex;
+
+        svg {
+          width: 32px;
+          height: 32px;
+          color: var(--white);
+          transition: color 0.25s;
+        }
+
+        :hover {
+          color: var(--blue);
+        }
+      }
+    }
+  }
+}
