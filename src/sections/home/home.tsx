@@ -8,7 +8,7 @@ export const Home = () => {
         <div className={styles.content}>
           <div className={styles.hero}>
             <div className={styles.text}>
-              <h1 className={styles.title}>Front-End React Developer</h1>
+              <h1 className={styles.title}>Frontend React Developer</h1>
               <p className={styles.description}>
                 Hi, I'm Dmitriy Babiy. A passionate Front-end React Developer
                 based in Krasnoyarsk, Russia. 📍

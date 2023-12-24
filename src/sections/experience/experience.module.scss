@@ -1,0 +1,11 @@
+.wrapper {
+  padding-block: 150px;
+  background-color: var(--gray);
+  
+  .container {
+    @include container;
+
+    .content {
+    }
+  }
+}
