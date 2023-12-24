@@ -6,6 +6,7 @@ html {
 }
 
 @mixin container {
-  max-width: 950px;
+  max-width: 1070px;
+  padding-inline: 40px;
   margin: 0 auto;
 }

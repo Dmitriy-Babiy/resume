@@ -7,12 +7,12 @@ const navigation = ['Home', 'About', 'Projects', 'Contacts'];
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <span
+      <h3
         onClick={() => animateScroll.scrollToTop({ duration: 500 })}
         className={styles.logo}
       >
         Dmitriy.Dev
-      </span>
+      </h3>
       <ul className={styles.navigation}>
         {navigation.map((route) => (
           <li key={route}>
