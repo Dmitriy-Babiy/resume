@@ -1,11 +1,27 @@
 .wrapper {
   padding-block: 150px;
   background-color: var(--gray);
-  
+
   .container {
     @include container;
 
     .content {
+      > h3 {
+        @include body-m-medium;
+        color: var(--blue);
+        margin-bottom: 10px;
+      }
+
+      > h4 {
+        @include body-xl-medium;
+        margin-bottom: 60px;
+      }
+
+      .verticalTimelineWrapper {
+        .icon {
+          background-color: var(--orange);
+        }
+      }
     }
   }
 }
