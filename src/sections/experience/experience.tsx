@@ -6,6 +6,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import styles from './experience.module.scss';
 
 import { TIMELINE_ELEMENTS } from '../../data/timelineElements';
+import clsx from 'clsx';
 
 export const Experience = () => {
   return (
@@ -17,19 +18,15 @@ export const Experience = () => {
           <VerticalTimeline>
             {TIMELINE_ELEMENTS.map((element) => (
               <VerticalTimelineElement
-                contentStyle={{
-                  background: 'rgb(33, 150, 243)',
-                  color: '#fff',
-                }}
-                dateClassName={styles.date}
-                textClassName={styles.card}
-                iconClassName={styles.icon}
-                className={styles.verticalTimelineWrapper}
-                contentArrowStyle={{
-                  borderRight: '7px solid  rgb(33, 150, 243)',
-                }}
                 date={element.date}
                 icon={element.icon}
+                dateClassName={styles.date}
+                textClassName={styles.card}
+                className={styles.verticalTimelineWrapper}
+                iconClassName={clsx(styles.icon, {
+                  [styles.green]: element.color === 'green',
+                  [styles.orange]: element.color === 'orange',
+                })}
               >
                 <h3>{element.title}</h3>
                 <h4>{element.subTitle}</h4>

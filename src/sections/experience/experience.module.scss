@@ -18,8 +18,32 @@
       }
 
       .verticalTimelineWrapper {
+        .date {
+          color: var(--text-color);
+          opacity: unset;
+        }
+
+        .card {
+          box-shadow: 0 0 10px var(--black-10);
+          background-color: var(--white);
+          color: var(--text-color);
+
+          .vertical-timeline-element-content-arrow {
+            border-right: 10px solid var(--white);
+          }
+        }
+
         .icon {
-          background-color: var(--orange);
+          border: 4px solid var(--white);
+          box-shadow: 0 0 10px var(--black-10);
+
+          &.green {
+            background-color: var(--green);
+          }
+
+          &.orange {
+            background-color: var(--orange);
+          }
         }
       }
     }
