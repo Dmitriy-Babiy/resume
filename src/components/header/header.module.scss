@@ -1,6 +1,8 @@
 .header {
   @include body-m-medium;
 
+  z-index: 9999;
+
   height: 80px;
   width: 100%;
 
