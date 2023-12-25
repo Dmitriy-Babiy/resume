@@ -26,6 +26,7 @@
   }
 
   .options {
+    overflow: hidden;
     position: absolute;
     width: inherit;
     display: flex;
@@ -33,6 +34,8 @@
     background-color: var(--white);
     box-shadow: 0 0 10px var(--black-10);
     transform: translateY(10px);
+    border-radius: 8px;
+    animation: opacity var(--animation-duration-fast) ease-in-out;
 
     .selected {
     }
@@ -51,7 +54,7 @@
         background-color: var(--blue);
       }
 
-      transition: all var(--animation-duration) ease-in-out;
+      transition: all var(--animation-duration-medium) ease-in-out;
     }
   }
 }

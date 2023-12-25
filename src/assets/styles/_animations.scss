@@ -1,5 +1,6 @@
 :root {
-  --animation-duration: 0.25s;
+  --animation-duration-medium: 0.25s;
+  --animation-duration-fast: 0.1s;
 }
 
 @keyframes morph {
@@ -17,5 +18,14 @@
 @keyframes rotate {
   100% {
     transform: rotate(1turn);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
