@@ -17,8 +17,8 @@ export const Experience = () => {
     <section className={styles.wrapper} id='Experience'>
       <div className={styles.container}>
         <div className={styles.content}>
-          <h3>EXPERIENCE</h3>
-          <h4>Each project is a unique piece of development 🧩</h4>
+          <h3>{t('experience.title')}</h3>
+          <h4>{t('experience.subtitle')}</h4>
           <VerticalTimeline>
             {TIMELINE_ELEMENTS.map((element, index) => (
               <VerticalTimelineElement
