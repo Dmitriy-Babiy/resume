@@ -3,10 +3,33 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import { useTranslation } from 'react-i18next';
-import { TIMELINE_ELEMENTS } from '../../data/constants/timelineElements';
+import { SchoolIcon, WorkIcon } from '../../assets/icons';
 import clsx from 'clsx';
-import 'react-vertical-timeline-component/style.min.css';
 import styles from './experience.module.scss';
+import 'react-vertical-timeline-component/style.min.css';
+
+const TIMELINE_ELEMENTS = [
+  {
+    id: 1,
+    icon: <SchoolIcon />,
+    color: 'orange',
+  },
+  {
+    id: 2,
+    icon: <WorkIcon />,
+    color: 'green',
+  },
+  {
+    id: 3,
+    icon: <WorkIcon />,
+    color: 'green',
+  },
+  {
+    id: 4,
+    icon: <WorkIcon />,
+    color: 'green',
+  },
+];
 
 export const Experience = () => {
   const { t } = useTranslation();
@@ -44,5 +67,3 @@ export const Experience = () => {
     </section>
   );
 };
-
-// {t(`${translationContact}${index}.description`)}
