@@ -5,6 +5,7 @@ import EmailIcon from './email.svg?react';
 import LocationIcon from './location.svg?react';
 import SchoolIcon from './school.svg?react';
 import WorkIcon from './work.svg?react';
+import DropDownIcon from './drop-down.svg?react';
 
 export {
   TelegramIcon,
@@ -14,4 +15,5 @@ export {
   LocationIcon,
   SchoolIcon,
   WorkIcon,
+  DropDownIcon,
 };

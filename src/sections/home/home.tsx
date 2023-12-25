@@ -1,18 +1,18 @@
+import { useTranslation } from 'react-i18next';
 import { GithubIcon, TelegramIcon } from '../../assets/icons';
 import styles from './home.module.scss';
 
 export const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.wrapper} id='Home'>
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.hero}>
             <div className={styles.text}>
-              <h1 className={styles.title}>Frontend React Developer</h1>
-              <p className={styles.description}>
-                Hi, I'm Dmitriy Babiy. A passionate Front-end React Developer
-                based in Krasnoyarsk, Russia. 📍
-              </p>
+              <h1 className={styles.title}>{t('home.title')}</h1>
+              <p className={styles.description}>{t('home.description')}</p>
               <span className={styles.links}>
                 <a href='https://t.me/Fosgensil' target='_blank'>
                   <TelegramIcon />

@@ -26,16 +26,21 @@
     cursor: pointer;
   }
 
-  .navigation {
+  .rightSide {
     display: flex;
     gap: 20px;
 
-    li {
-      cursor: pointer;
+    .navigation {
+      display: flex;
+      gap: 20px;
 
-      &:hover {
-        color: var(--blue);
-        transition: all 0.25s;
+      li {
+        cursor: pointer;
+
+        &:hover {
+          color: var(--blue);
+          transition: all var(--animation-duration);
+        }
       }
     }
   }

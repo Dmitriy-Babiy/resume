@@ -1,0 +1,57 @@
+.wrapper {
+  width: 60px;
+  @include body-m;
+
+  .select {
+    cursor: pointer;
+    position: relative;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0px 0px 0px 10px;
+
+    .label {
+      width: 20px;
+    }
+
+    .dropdownIcon {
+      width: 16px;
+      height: 16px;
+
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .options {
+    position: absolute;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0 0 10px var(--black-10);
+    transform: translateY(10px);
+
+    .selected {
+    }
+
+    .option {
+      cursor: pointer;
+      padding: 4px 8px 4px 8px;
+
+      &.active {
+        color: var(--white);
+        background-color: var(--blue);
+      }
+
+      &:hover {
+        color: var(--white);
+        background-color: var(--blue);
+      }
+
+      transition: all var(--animation-duration) ease-in-out;
+    }
+  }
+}

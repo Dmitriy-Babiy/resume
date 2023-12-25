@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { CircleTextIcon } from '../../assets/icons';
 import styles from './about.module.scss';
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.wrapper} id='About'>
       <div className={styles.container}>
@@ -23,20 +26,9 @@ export const About = () => {
           </div>
 
           <div className={styles.right}>
-            <h3>ABOUT ME</h3>
-            <h4>
-              A dedicated Front-end Developer based in Krasnoyarsk, Russia 📍
-            </h4>
-            <p>
-              As a Junior Front-End Developer, I possess an impressive arsenal
-              of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
-              excel in designing and maintaining responsive websites that offer
-              a smooth user experience. My expertise lies in crafting dynamic,
-              engaging interfaces through writing clean and optimized code and
-              utilizing cutting-edge development tools and techniques. I am also
-              a team player who thrives in collaborating with cross-functional
-              teams to produce outstanding web applications.
-            </p>
+            <h3>{t('about.title')}</h3>
+            <h4>{t('about.subtitle')}</h4>
+            <p>{t('about.description')}</p>
           </div>
         </div>
       </div>

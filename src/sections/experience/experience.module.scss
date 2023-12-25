@@ -28,6 +28,10 @@
           background-color: var(--white);
           color: var(--text-color);
 
+          p {
+            @include fontBase(var(--mulish-font));
+          }
+
           .vertical-timeline-element-content-arrow {
             border-right: 10px solid var(--white);
           }

@@ -2,13 +2,17 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
+import { useTranslation } from 'react-i18next';
+import { TIMELINE_ELEMENTS } from '../../data/constants/timelineElements';
+import clsx from 'clsx';
 import 'react-vertical-timeline-component/style.min.css';
 import styles from './experience.module.scss';
 
-import { TIMELINE_ELEMENTS } from '../../data/timelineElements';
-import clsx from 'clsx';
-
 export const Experience = () => {
+  const { t } = useTranslation();
+
+  const translationElement = `experience.element`;
+
   return (
     <section className={styles.wrapper} id='Experience'>
       <div className={styles.container}>
@@ -16,9 +20,10 @@ export const Experience = () => {
           <h3>EXPERIENCE</h3>
           <h4>Each project is a unique piece of development 🧩</h4>
           <VerticalTimeline>
-            {TIMELINE_ELEMENTS.map((element) => (
+            {TIMELINE_ELEMENTS.map((element, index) => (
               <VerticalTimelineElement
-                date={element.date}
+                key={element.id}
+                date={t(`${translationElement}${index}.date`)}
                 icon={element.icon}
                 dateClassName={styles.date}
                 textClassName={styles.card}
@@ -28,9 +33,9 @@ export const Experience = () => {
                   [styles.orange]: element.color === 'orange',
                 })}
               >
-                <h3>{element.title}</h3>
-                <h4>{element.subTitle}</h4>
-                <p>{element.description}</p>
+                <h3>{t(`${translationElement}${index}.title`)}</h3>
+                <h4>{t(`${translationElement}${index}.subtitle`)}</h4>
+                <p>{t(`${translationElement}${index}.description`)}</p>
               </VerticalTimelineElement>
             ))}
           </VerticalTimeline>
@@ -39,3 +44,5 @@ export const Experience = () => {
     </section>
   );
 };
+
+// {t(`${translationContact}${index}.description`)}

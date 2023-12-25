@@ -1,0 +1,62 @@
+{
+  "header": {
+    "navigation": {
+      "Home": "Home",
+      "About": "About",
+      "Experience": "Experience",
+      "Contacts": "Contacts"
+    }
+  },
+  "home": {
+    "title": "Frontend React Developer",
+    "description": "Hi, I'm Dmitriy Babiy. A passionate Front-end React Developer based in Krasnoyarsk, Russia. 📍"
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "subtitle": "A dedicated Front-end Developer based in Krasnoyarsk, Russia 📍",
+    "description": "As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications."
+  },
+  "experience": {
+    "title": "EXPERIENCE",
+    "subtitle": "Each project is a unique piece of development 🧩",
+    "element0": {
+      "title": "Education at the Institute",
+      "subtitle": "IKIT (SFU), Applied Informatics",
+      "description": "Acquired fundamental knowledge in frontend development during my time at the institute. Studied modern technologies and tools for building interfaces, including HTML, CSS, and JavaScript. Gained experience in developing user interfaces and worked with various libraries and frameworks.",
+      "date": "2019-2023"
+    },
+    "element1": {
+      "title": "KozhinDev",
+      "subtitle": "Steroids",
+      "description": "Steroids is an open-source framework that provides a React and Redux-based ecosystem with a wide range of ready-to-use components, a unique architecture, UI Kit and SSR capabilities. This was my first commercial project in which I actively contributed. My main responsibilities included writing tests using Jest, developing components using SCSS (BEM) and writing code in React.",
+      "date": "2023 Apr - 2023 May"
+    },
+    "element2": {
+      "title": "SibDev",
+      "subtitle": "NDA projects",
+      "description": "I have had the opportunity to work on various projects where I was involved in the full implementation of the frontend part of websites of varying complexity. The libraries I used during implementation included Redux, TanStackQuery, React Hook Form, Ant Design, React Router, TypeScript and Axios.",
+      "date": "2023 Aug - 2023 Oct"
+    },
+    "element3": {
+      "title": "SFU",
+      "subtitle": "Prisma",
+      "description": "Prisma is a comprehensive hybrid adaptive management system for educational programs that can be used by leaders at any level to make managerial decisions. In this project, I was one of the lead developers. The libraries used in the development included Nivo/Antd (charts), SCSS (BEM), Ant Design, TanStackQuery, TypeScript, Axios, React Router and Vite.",
+      "date": "2023 Nov - 2023 Dec"
+    }
+  },
+  "contacts": {
+    "title": "CONTACTS",
+    "subtitle": "Don't be shy! Hit me up! 👇",
+    "contact0": {
+      "title": "Location",
+      "description": "Krasnoyarsk, Russia"
+    },
+    "contact1": {
+      "title": "Email",
+      "description": "dimascelecto@gmail.com"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2023. All rights are reserved"
+  }
+}
