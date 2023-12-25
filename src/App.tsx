@@ -1,10 +1,7 @@
 import { Footer, Header } from './components';
-import { About, Contacts, Home } from './sections';
-import { Experience } from './sections/experience';
+import { About, Contacts, Experience, Home } from './sections';
 
 function App() {
-
-
   return (
     <>
       <Header />
