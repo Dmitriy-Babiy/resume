@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { CircleTextIcon } from '../../assets/icons';
+import { CircleTextIcon } from '@/assets/icons';
 import styles from './about.module.scss';
 
 export const About = () => {

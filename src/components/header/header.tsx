@@ -1,7 +1,7 @@
 import { Link, animateScroll } from 'react-scroll';
-import { LanguageSelect } from '..';
-import styles from './header.module.scss';
 import { useTranslation } from 'react-i18next';
+import { LanguageSelect } from '@components/language-select';
+import styles from './header.module.scss';
 
 const NAVIGATION = ['Home', 'About', 'Experience', 'Contacts'];
 

@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { GithubIcon, TelegramIcon } from '../../assets/icons';
+import { GithubIcon, TelegramIcon } from '@assets/icons';
 import styles from './home.module.scss';
 
 export const Home = () => {

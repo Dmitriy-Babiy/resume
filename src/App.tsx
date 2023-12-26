@@ -1,5 +1,5 @@
-import { Footer, Header } from './components';
-import { About, Contacts, Experience, Home } from './sections';
+import { Footer, Header } from '@/components';
+import { About, Contacts, Experience, Home } from '@/sections';
 
 function App() {
   return (

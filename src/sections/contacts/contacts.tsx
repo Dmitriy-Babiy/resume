@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { EmailIcon, LocationIcon } from '../../assets/icons';
+import { EmailIcon, LocationIcon } from '@/assets/icons';
 import styles from './contacts.module.scss';
 
 const CONTACTS = [

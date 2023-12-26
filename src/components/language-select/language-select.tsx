@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { DropDownIcon } from '@/assets/icons';
 import styles from './language-select.module.scss';
 import clsx from 'clsx';
-import { DropDownIcon } from '../../assets/icons';
 
 type Option = { label: React.ReactNode; value: string };
 

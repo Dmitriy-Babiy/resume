@@ -3,10 +3,10 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import { useTranslation } from 'react-i18next';
-import { SchoolIcon, WorkIcon } from '../../assets/icons';
 import clsx from 'clsx';
 import styles from './experience.module.scss';
 import 'react-vertical-timeline-component/style.min.css';
+import { SchoolIcon, WorkIcon } from '@/assets/icons';
 
 const TIMELINE_ELEMENTS = [
   {
