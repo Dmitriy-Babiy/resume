@@ -2,6 +2,13 @@ import { useTranslation } from 'react-i18next';
 import { GithubIcon, TelegramIcon } from '@assets/icons';
 import styles from './home.module.scss';
 
+const SKILLS_IMAGES = [
+  { src: 'https://skillicons.dev/icons?i=html,css', alt: 'html-css-img' },
+  { src: 'https://skillicons.dev/icons?i=js,ts', alt: 'js-ts-img' },
+  { src: 'https://skillicons.dev/icons?i=react,next', alt: 'react-next-img' },
+  { src: 'https://skillicons.dev/icons?i=tailwind,sass', alt: 'tailwind-sass-img' }
+];
+
 export const Home = () => {
   const { t } = useTranslation();
 
@@ -27,30 +34,11 @@ export const Home = () => {
           <div className={styles.skills}>
             <span>Tech Stack</span>
             <ul>
-              <li>
-                <img
-                  src='https://skillicons.dev/icons?i=html,css'
-                  alt='html-css-img'
-                />
-              </li>
-              <li>
-                <img
-                  src='https://skillicons.dev/icons?i=js,ts'
-                  alt='js-ts-img'
-                />
-              </li>
-              <li>
-                <img
-                  src='https://skillicons.dev/icons?i=react,next'
-                  alt='react-next-img'
-                />
-              </li>
-              <li>
-                <img
-                  src='https://skillicons.dev/icons?i=tailwind,sass'
-                  alt='tailwind-sass-img'
-                />
-              </li>
+              {SKILLS_IMAGES.map((image) => (
+                <li key={image.src}>
+                  <img src={image.src} alt={image.alt} />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
